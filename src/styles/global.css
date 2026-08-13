@@ -223,27 +223,30 @@ button, summary { font: inherit; }
 .hero-copy {
   max-width: 565px;
   margin: 2rem 0 2.4rem;
-  color: rgba(243, 240, 231, 0.74);
+  color: var(--paper);
   font-family: var(--serif);
   font-size: clamp(1.05rem, 1.6vw, 1.3rem);
   line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95), 0 0 16px rgba(0, 0, 0, 0.72);
 }
 
 .hero-actions { display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap; }
+.hero-actions > .text-link { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95), 0 0 12px rgba(0, 0, 0, 0.72); }
 
 .copy-address {
   display: inline-flex;
   min-width: 410px;
   align-items: stretch;
   overflow: hidden;
-  border: 1px solid rgba(243, 240, 231, 0.26);
+  border: 1px solid rgba(243, 240, 231, 0.38);
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.045);
-  backdrop-filter: blur(4px);
+  background: rgba(9, 18, 14, 0.86);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(7px);
 }
 
 .address-text { flex: 1; padding: 0.75rem 1rem; }
-.address-label { display: block; color: rgba(243,240,231,.5); font-size: .58rem; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+.address-label { display: block; color: rgba(243,240,231,.78); font-size: .58rem; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
 .address-text code { color: var(--paper); background: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1rem; }
 
 .copy-address button {
