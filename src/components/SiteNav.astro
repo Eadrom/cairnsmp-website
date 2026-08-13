@@ -1,5 +1,6 @@
 ---
 const { compact = false } = Astro.props;
+const currentPath = Astro.url.pathname;
 
 const links = [
   { label: 'Play', href: '/play/' },
@@ -12,5 +13,9 @@ const links = [
 ---
 
 <nav class:list={['site-nav', { compact }]} aria-label="Primary navigation">
-  {links.map(({ label, href }) => <a href={href}>{label}</a>)}
+  {links.map(({ label, href }) => {
+    const isInternal = href.startsWith('/');
+    const isActive = isInternal && (currentPath === href || currentPath.startsWith(href));
+    return <a class:list={{ active: isActive }} href={href} aria-current={isActive ? 'page' : undefined}>{label}</a>;
+  })}
 </nav>

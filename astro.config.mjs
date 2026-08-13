@@ -10,7 +10,7 @@ export default defineConfig({
       title: 'Cairn SMP',
       description: 'The player handbook for Cairn SMP, a small Java Edition survival community.',
       disable404Route: true,
-      favicon: '/favicon.svg',
+      favicon: '/favicon.png',
       logo: {
         src: './public/branding/cairnsmp-icon.png',
         alt: 'Cairn SMP',
