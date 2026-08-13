@@ -1,12 +1,18 @@
 ---
 import SiteNav from './SiteNav.astro';
+import CopyAddress from './CopyAddress.astro';
+
+const showAddress = Astro.url.pathname === '/';
 ---
 
 <header class="site-header">
-  <a class="brand" href="/" aria-label="Cairn SMP home">
-    <img src="/branding/cairnsmp-icon.png" width="40" height="40" alt="" />
-    <span>Cairn SMP</span>
-  </a>
+  <div class="header-primary">
+    <a class="brand" href="/" aria-label="Cairn SMP home">
+      <img src="/branding/cairnsmp-icon.png" width="40" height="40" alt="" />
+      <span>Cairn SMP</span>
+    </a>
+    {showAddress && <div class="header-address"><CopyAddress /></div>}
+  </div>
   <div class="desktop-nav"><SiteNav /></div>
   <details class="mobile-menu">
     <summary>Menu</summary>

@@ -114,6 +114,12 @@ button, summary { font: inherit; }
 }
 .header-on-light .brand { color: var(--forest-900); }
 
+.header-primary {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 1.75rem);
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -132,6 +138,19 @@ button, summary { font: inherit; }
   object-fit: contain;
   filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.18));
 }
+
+.header-address .copy-address {
+  min-width: 310px;
+  height: 50px;
+  border-color: rgba(243, 240, 231, 0.3);
+  background: rgba(9, 18, 14, 0.72);
+  box-shadow: none;
+}
+
+.header-address .address-text { padding: 0.45rem 0.75rem; }
+.header-address .address-label { font-size: 0.5rem; }
+.header-address .address-text code { font-size: 0.82rem; }
+.header-address .copy-address button { min-width: 108px; font-size: 0.6rem; }
 
 .site-nav { display: flex; align-items: center; gap: clamp(1.2rem, 2.2vw, 2.25rem); }
 
@@ -212,10 +231,10 @@ button, summary { font: inherit; }
   max-width: 760px;
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(3.5rem, 7.2vw, 6.7rem);
+  font-size: clamp(3.25rem, 5.5vw, 5.35rem);
   font-weight: 400;
   letter-spacing: -0.055em;
-  line-height: 0.92;
+  line-height: 0.96;
 }
 
 .hero h1 em { color: var(--gold); font-weight: 400; }
@@ -393,7 +412,7 @@ button, summary { font: inherit; }
 .not-found > p:not(.eyebrow) { max-width:550px; margin:1.5rem 0 2rem; color:var(--muted); font-family:var(--serif); font-size:1.15rem; }
 .not-found > div { display:flex; align-items:center; gap:2rem; }
 
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   .desktop-nav { display:none; }
   .mobile-menu { display:block; position:relative; }
   .mobile-menu summary { cursor:pointer; list-style:none; font-size:.72rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
@@ -401,6 +420,9 @@ button, summary { font: inherit; }
   .mobile-menu-panel { position:absolute; top:2.1rem; right:0; width:220px; padding:1rem; background:var(--paper); color:var(--forest-900); box-shadow:0 16px 40px rgba(0,0,0,.25); }
   .mobile-menu-panel .site-nav { flex-direction:column; align-items:stretch; gap:.6rem; }
   .mobile-menu-panel .site-nav a { padding:.4rem; }
+}
+
+@media (max-width: 980px) {
   .hero-brand-art { right: -4rem; width: 390px; opacity: .42; }
   .hero-content { max-width:650px; }
   .feature-card { grid-column:span 3; }
@@ -413,7 +435,13 @@ button, summary { font: inherit; }
 @media (max-width: 700px) {
   .site-header { width:calc(100% - 2rem); height:75px; }
   .hero { min-height:720px; padding-top:150px; padding-bottom:130px; }
-  .hero h1 { font-size:clamp(3.2rem, 15vw, 5rem); }
+  .header-primary { gap:.7rem; }
+  .brand { gap:.45rem; font-size:1.05rem; }
+  .brand img { width:38px; height:38px; }
+  .header-address .copy-address { min-width:44px; width:44px; height:44px; }
+  .header-address .address-text { display:none; }
+  .header-address .copy-address button { min-width:44px; border-left:0; padding:.55rem; }
+  .hero h1 { font-size:clamp(3rem, 12vw, 4rem); }
   .hero-copy { max-width:92%; }
   .hero-brand-art { right:-85px; bottom:80px; width:310px; opacity:.25; }
   .trail-note { display:none; }
