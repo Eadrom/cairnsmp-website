@@ -1,0 +1,128 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CopyAddress from '../components/CopyAddress.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+
+const releases = (await getCollection('changelog')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+const latest = releases[0];
+const releaseDate = latest?.data.date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+---
+
+<BaseLayout
+  title="Cairn SMP"
+  description="Cairn SMP is a small Java Edition survival server built for friends, guildmates, and a growing community of explorers."
+>
+  <section class="hero">
+    <div class="hero-landscape" aria-hidden="true">
+      <svg viewBox="0 0 1000 520" preserveAspectRatio="none">
+        <path class="ridge ridge-back" d="M0 365 110 266l78 57 142-180 122 146 110-112 173 155 97-101 168 120v169H0Z" />
+        <path class="ridge ridge-mid" d="M0 417 159 299l106 91 172-141 92 108 127-68 151 107 96-72 97 68v128H0Z" />
+        <path class="ridge ridge-front" d="M0 461 165 391l139 57 155-80 149 58 136-83 256 97v80H0Z" />
+        <g class="trees">
+          <path d="m82 400 18-48 18 48h-11l14 31H79l14-31Zm753-43 20-54 20 54h-11l15 34h-48l15-34Zm74 73 15-42 16 42h-9l12 27h-38l12-27Z" />
+        </g>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow"><span></span> Java Edition survival</p>
+      <h1>Find your trail.<br /><em>Build something lasting.</em></h1>
+      <p class="hero-copy">A small survival server shaped around friends, guildmates, and friends-of-friends—with room for new travelers along the way.</p>
+      <div class="hero-actions">
+        <CopyAddress />
+        <a class="text-link" href="/play/">How to play <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="cairn-illustration" aria-hidden="true">
+      <span class="stone stone-1"></span>
+      <span class="stone stone-2"></span>
+      <span class="stone stone-3"></span>
+      <span class="stone stone-4"></span>
+      <span class="cairn-ground"></span>
+    </div>
+    <p class="trail-note"><span>01</span> A quiet place to explore</p>
+  </section>
+
+  <section class="intro content-section">
+    <div>
+      <p class="section-kicker">Welcome to the trail</p>
+      <h2>Survival, with a little more to discover.</h2>
+    </div>
+    <div class="intro-copy">
+      <p>Cairn SMP began as a place for Eadrom’s friends and guildmates to play together. It is growing carefully: community first, useful systems second, noise never.</p>
+      <p>This site is both the front door and the field guide. Start here, then use the handbook whenever you need a reliable answer.</p>
+      <a class="text-link dark" href="/about/">More about Cairn <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="features-section content-section">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">Along the way</p>
+        <h2>Systems worth learning</h2>
+      </div>
+      <a class="text-link dark" href="/features/">Explore the handbook <span aria-hidden="true">→</span></a>
+    </div>
+    <FeatureGrid />
+  </section>
+
+  <section class="start-section content-section">
+    <div class="start-card">
+      <p class="section-kicker light">Your first waypoint</p>
+      <h2>Getting started is simple.</h2>
+      <ol class="start-steps">
+        <li><span>01</span><div><strong>Open Java Edition</strong><p>Use Minecraft: Java Edition on a supported version.</p></div></li>
+        <li><span>02</span><div><strong>Add the server</strong><p>Enter <code>play.cairnsmp.com</code> in Multiplayer.</p></div></li>
+        <li><span>03</span><div><strong>Read the trail signs</strong><p>Review the rules, then join when you’re ready.</p></div></li>
+      </ol>
+      <div class="start-actions">
+        <a class="button-link light" href="/play/">Full joining guide</a>
+        <a class="text-link" href="/rules/">Read the rules <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="map-panel" aria-hidden="true">
+      <svg viewBox="0 0 500 560">
+        <path class="contour" d="M34 77c69-80 162-49 180 15s-57 99-21 168 150 9 175 89-23 144-120 151S80 459 51 389s65-109 32-174S-12 131 34 77Z"/>
+        <path class="contour" d="M85 108c52-54 111-33 126 17s-42 77-7 126 113 17 129 78-23 107-94 110S114 403 96 353s48-83 23-126-69-77-34-119Z"/>
+        <path class="contour" d="M138 149c31-35 66-21 77 12s-19 51 2 82 70 13 82 54-18 71-61 74-76-25-88-57 27-54 11-83-45-52-23-82Z"/>
+        <path class="trail" d="M55 468c75-73 75-128 145-165s41-91 101-139 101-45 146-82"/>
+        <circle cx="200" cy="303" r="9"/><circle cx="200" cy="303" r="20" class="waypoint-ring"/>
+      </svg>
+      <p>One trail.<br />Plenty of directions.</p>
+    </div>
+  </section>
+
+  <section class="update-section content-section">
+    <div>
+      <p class="section-kicker">Latest update</p>
+      {latest ? (
+        <>
+          <p class="update-meta">Version {latest.data.version} · {releaseDate}</p>
+          <h2>{latest.data.title}</h2>
+          <p>{latest.data.summary}</p>
+          <a class="button-link dark" href={`/changelog/${latest.id}/`}>Read the release notes</a>
+        </>
+      ) : (
+        <>
+          <p class="update-meta">The logbook is ready</p>
+          <h2>Release notes are being prepared.</h2>
+          <p>Verified server updates will appear here automatically as they are added to the changelog.</p>
+          <a class="button-link dark" href="/changelog/">Open the changelog</a>
+        </>
+      )}
+    </div>
+    <aside class="community-card" id="community">
+      <p class="section-kicker light">Around the campfire</p>
+      <h2>Questions?</h2>
+      <p>The dedicated Discord is being prepared. For now, reach the server team by email.</p>
+      <a href="mailto:support@cairnsmp.com">support@cairnsmp.com <span aria-hidden="true">↗</span></a>
+    </aside>
+  </section>
+</BaseLayout>

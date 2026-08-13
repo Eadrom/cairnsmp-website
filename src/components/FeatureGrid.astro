@@ -1,0 +1,18 @@
+---
+import { features } from '../data/features';
+
+const { compact = false } = Astro.props;
+---
+
+<div class:list={['feature-grid', { compact }]}> 
+  {features.map((feature) => (
+    <a class="feature-card" href={feature.href}>
+      <span class="feature-marker" aria-hidden="true">{feature.marker}</span>
+      <div>
+        <h3>{feature.title}</h3>
+        <p>{feature.description}</p>
+        <span class="card-link">Open guide <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+  ))}
+</div>

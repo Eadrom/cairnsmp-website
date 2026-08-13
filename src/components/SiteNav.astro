@@ -1,0 +1,16 @@
+---
+const { compact = false } = Astro.props;
+
+const links = [
+  { label: 'Play', href: '/play/' },
+  { label: 'Features', href: '/features/' },
+  { label: 'Rules', href: '/rules/' },
+  { label: 'Commands', href: '/commands/' },
+  { label: 'Changelog', href: '/changelog/' },
+  { label: 'Discord', href: '/about/#community' },
+];
+---
+
+<nav class:list={['site-nav', { compact }]} aria-label="Primary navigation">
+  {links.map(({ label, href }) => <a href={href}>{label}</a>)}
+</nav>

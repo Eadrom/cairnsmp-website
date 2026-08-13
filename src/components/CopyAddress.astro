@@ -1,0 +1,50 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+const address = 'play.cairnsmp.com';
+---
+
+<div class:list={['copy-address', { compact }]} data-copy-address>
+  <div class="address-text">
+    <span class="address-label">Java server</span>
+    <code>{address}</code>
+  </div>
+  <button type="button" data-copy-button aria-label={`Copy ${address} to clipboard`}>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8 8h11v11H8zM5 16H4V5h11v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </svg>
+    <span data-copy-label>Copy address</span>
+  </button>
+  <span class="sr-only" aria-live="polite" data-copy-status></span>
+</div>
+
+<script>
+  const address = 'play.cairnsmp.com';
+
+  document.querySelectorAll<HTMLElement>('[data-copy-address]').forEach((control) => {
+    const button = control.querySelector<HTMLButtonElement>('[data-copy-button]');
+    const label = control.querySelector<HTMLElement>('[data-copy-label]');
+    const status = control.querySelector<HTMLElement>('[data-copy-status]');
+    if (!button || !label || !status || button.dataset.ready) return;
+    button.dataset.ready = 'true';
+
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(address);
+        control.classList.add('copied');
+        label.textContent = 'Copied!';
+        status.textContent = `${address} copied to clipboard.`;
+        window.setTimeout(() => {
+          control.classList.remove('copied');
+          label.textContent = 'Copy address';
+        }, 2400);
+      } catch {
+        label.textContent = 'Select address above';
+        status.textContent = `Copy did not work. Select ${address} and copy it manually.`;
+      }
+    });
+  });
+</script>

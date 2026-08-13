@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.env.*
+.venv/
+env/
+venv/
+ENV/
+*.egg-info/
+.eggs/
+dist/
+build/
+.astro/
+node_modules/
+*.egg
+.python-version
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+vendor/
+*.test
+*.out
+
+# Bash / general
+*.log
+*.tmp
+CAIRN_WEBSITE_CODEX_BRIEF_GITHUB_PAGES_FINAL.txt
+
+# VSCode
+.vscode/
+*.code-workspace
+*.history/
+
+# Pluma / Nano / swap files
+.*.swp
+*~

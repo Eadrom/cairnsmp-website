@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+
+const commands = (await getCollection('commands')).sort((a, b) =>
+  a.data.category.localeCompare(b.data.category) || a.data.command.localeCompare(b.data.command)
+);
+const categories = Map.groupBy(commands, (entry) => entry.data.category);
+---
+
+{commands.length === 0 ? (
+  <div class="content-empty-state">
+    <p><strong>Command reference coming soon.</strong></p>
+    <p>The verified server command list has not been supplied yet. No placeholder commands are shown.</p>
+  </div>
+) : (
+  <div class="command-groups">
+    {[...categories].map(([category, entries]) => (
+      <section>
+        <h2>{category}</h2>
+        <div class="command-list">
+          {entries.map(({ data }) => (
+            <article>
+              <h3><code>{data.command}</code></h3>
+              <p>{data.description}</p>
+              {data.aliases?.length && <p><strong>Aliases:</strong> {data.aliases.map((alias) => <code>{alias}</code>)}</p>}
+              {data.example && <p><strong>Example:</strong> <code>{data.example}</code></p>}
+              {data.notes && <p class="command-note">{data.notes}</p>}
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+)}

@@ -1,0 +1,20 @@
+---
+import SiteNav from './SiteNav.astro';
+---
+
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Cairn SMP home">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <path d="M10 54h44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path d="M16 48c0-6 5-10 16-10s16 4 16 10H16Z" fill="currentColor" opacity=".55"/>
+      <path d="M21 36c1-7 4-11 11-11s10 4 11 11H21Z" fill="currentColor" opacity=".72"/>
+      <path d="M26 23c0-6 2-10 6-10s6 4 6 10H26Z" fill="currentColor"/>
+    </svg>
+    <span>Cairn SMP</span>
+  </a>
+  <div class="desktop-nav"><SiteNav /></div>
+  <details class="mobile-menu">
+    <summary>Menu</summary>
+    <div class="mobile-menu-panel"><SiteNav /></div>
+  </details>
+</header>

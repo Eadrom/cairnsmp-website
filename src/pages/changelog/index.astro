@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+const releases = (await getCollection('changelog')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const formatDate = (date: Date) => date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Changelog',
+    description: 'Cairn SMP release notes and server updates, newest first.',
+  }}
+>
+  <p class="changelog-intro">A permanent log of Cairn SMP releases and changes. The newest update always appears first.</p>
+
+  {releases.length === 0 ? (
+    <div class="content-empty-state">
+      <p><strong>Release notes are being prepared.</strong></p>
+      <p>The changelog collection is ready for the server’s real release history. No placeholder releases are published.</p>
+    </div>
+  ) : (
+    <ol class="release-list">
+      {releases.map(({ id, data }) => (
+        <li>
+          <a href={`/changelog/${id}/`}>
+            <div class="release-meta">
+              <span>Version {data.version}</span>
+              <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+            </div>
+            <h2>{data.title}</h2>
+            <p>{data.summary}</p>
+            {data.tags?.length && (
+              <div class="release-tags">{data.tags.map((tag) => <span>{tag}</span>)}</div>
+            )}
+          </a>
+        </li>
+      ))}
+    </ol>
+  )}
+</StarlightPage>
