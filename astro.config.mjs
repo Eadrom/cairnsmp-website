@@ -9,6 +9,7 @@ export default defineConfig({
     starlight({
       title: 'Cairn SMP',
       description: 'The player handbook for Cairn SMP, a small Java Edition survival community.',
+      disable404Route: true,
       favicon: '/favicon.svg',
       logo: {
         src: './src/assets/cairn-mark.svg',

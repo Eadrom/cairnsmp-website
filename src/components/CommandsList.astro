@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-const commands = (await getCollection('commands')).sort((a, b) =>
+const commands = (await getCollection('commands')).filter((entry) => entry.data.published).sort((a, b) =>
   a.data.category.localeCompare(b.data.category) || a.data.command.localeCompare(b.data.command)
 );
 const categories = Map.groupBy(commands, (entry) => entry.data.category);

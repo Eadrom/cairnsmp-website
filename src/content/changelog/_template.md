@@ -5,6 +5,7 @@ title: Release title
 summary: One concise sentence describing this release.
 tags:
   - example
+published: false
 ---
 
 <!-- Copy this file to a stable slug such as `1-4.md`, then replace every placeholder. -->

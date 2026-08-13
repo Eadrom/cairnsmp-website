@@ -11,7 +11,7 @@ const docs = defineCollection({
 
 const changelog = defineCollection({
   loader: glob({
-    pattern: ['**/*.{md,mdx}', '!**/_template.md'],
+    pattern: '**/*.{md,mdx}',
     base: './src/content/changelog',
   }),
   schema: z.object({
@@ -20,6 +20,7 @@ const changelog = defineCollection({
     title: z.string(),
     summary: z.string(),
     tags: z.array(z.string()).optional(),
+    published: z.boolean().default(true),
   }),
 });
 
@@ -32,6 +33,7 @@ const commands = defineCollection({
     aliases: z.array(z.string()).optional(),
     example: z.string().optional(),
     notes: z.string().optional(),
+    published: z.boolean().default(true),
   }),
 });
 

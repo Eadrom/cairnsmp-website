@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CopyAddress from '../components/CopyAddress.astro';
 import FeatureGrid from '../components/FeatureGrid.astro';
 
-const releases = (await getCollection('changelog')).sort(
+const releases = (await getCollection('changelog')).filter((entry) => entry.data.published).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 const latest = releases[0];

@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
 export async function getStaticPaths() {
-  const releases = await getCollection('changelog');
+  const releases = (await getCollection('changelog')).filter((entry) => entry.data.published);
   return releases.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 

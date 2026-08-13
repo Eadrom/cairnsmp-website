@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "template",
+    "command": "/replace-me",
+    "description": "Replace this unpublished template with a verified command.",
+    "category": "Template",
+    "aliases": [],
+    "example": "/replace-me",
+    "notes": "Set published to true only after every value is verified for Cairn SMP.",
+    "published": false
+  }
+]
