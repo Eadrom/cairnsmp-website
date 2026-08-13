@@ -21,6 +21,6 @@ A cairn is a marker built one stone at a time. It helps people find a route with
 
 ## Community {#community}
 
-A dedicated Cairn SMP Discord server is being prepared. The permanent invite URL has not been supplied yet, so the site does not invent or redirect to one.
+Join the community using the permanent [Cairn SMP Discord invite](https://discord.gg/6p8UXyXMzr).
 
-For support in the meantime, email [support@cairnsmp.com](mailto:support@cairnsmp.com).
+For support by email, contact [support@cairnsmp.com](mailto:support@cairnsmp.com).

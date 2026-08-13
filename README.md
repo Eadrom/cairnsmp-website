@@ -32,6 +32,8 @@ The production output is written to `dist/`.
 - `src/data/commands.json` — structured command reference
 - `src/content.config.ts` — build-time content validation
 - `src/styles/` — landing page and Starlight themes
+- `src/assets/branding/` — source branding processed by Astro
+- `public/branding/` — small branding files served directly, such as the header icon
 - `public/` — domain, crawler, favicon, and social-preview assets
 
 Git and Markdown are the content-management workflow. V1 has no database, admin interface, authentication, or server runtime.
@@ -79,3 +81,9 @@ In the GitHub repository, choose **Settings → Pages → Source: GitHub Actions
 DNS remains managed at Porkbun. Do not change the `play.cairnsmp.com` Minecraft record while configuring the website. Use GitHub’s current custom-domain documentation when adding the apex and `www` records instead of copying potentially stale IP addresses into this repository.
 
 No secrets are required for V1.
+
+## Branding and screenshots
+
+Put logos and prominent page artwork in `src/assets/branding/` so Astro can optimize them during the build. Put screenshots in `src/assets/screenshots/` and import them from the page or component that displays them. Reserve `public/branding/` for small assets that need a stable direct URL, such as icons.
+
+Keep original high-resolution artwork outside the repository as the editable source. Commit web-sized PNG, WebP, AVIF, SVG, or JPEG derivatives with descriptive file names and meaningful alt text wherever the image conveys information.

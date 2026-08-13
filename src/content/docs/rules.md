@@ -17,4 +17,4 @@ The server owner’s real rules have not been supplied for migration yet. No pol
 
 ## Questions and appeals
 
-The dedicated community Discord will be linked here when its permanent invite is ready. Until then, email [support@cairnsmp.com](mailto:support@cairnsmp.com).
+Ask in the [Cairn SMP Discord](https://discord.gg/6p8UXyXMzr) or email [support@cairnsmp.com](mailto:support@cairnsmp.com).

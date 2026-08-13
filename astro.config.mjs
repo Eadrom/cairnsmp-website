@@ -12,7 +12,7 @@ export default defineConfig({
       disable404Route: true,
       favicon: '/favicon.svg',
       logo: {
-        src: './src/assets/cairn-mark.svg',
+        src: './public/branding/cairnsmp-icon.png',
         alt: 'Cairn SMP',
         replacesTitle: false,
       },

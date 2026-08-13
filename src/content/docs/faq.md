@@ -15,7 +15,7 @@ Use `play.cairnsmp.com`. Follow the full steps on the [How to Play page](/play/)
 
 ## Which Minecraft versions are supported?
 
-The current supported version list has not been supplied for the website yet. Check the Multiplayer server entry or contact support before troubleshooting a version mismatch.
+Cairn SMP currently supports **Minecraft Java Edition 26.2**.
 
 ## Is there a live server status or player count?
 
@@ -23,7 +23,7 @@ No. The V1 website intentionally does not publish live status or player counts.
 
 ## Is there a Discord?
 
-A dedicated Cairn SMP Discord is being prepared. The permanent invite will be linked when it is available.
+Yes. Join using the permanent [Cairn SMP Discord invite](https://discord.gg/6p8UXyXMzr).
 
 ## How do I get help?
 
