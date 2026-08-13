@@ -74,7 +74,7 @@ The workflow in `.github/workflows/deploy.yml` runs on pull requests and pushes 
 - runs `npm run build`
 - uploads and deploys `dist/` to GitHub Pages on non-PR runs
 
-In the GitHub repository, choose **Settings → Pages → Source: GitHub Actions**. The canonical custom domain is `cairnsmp.com`; Astro intentionally has no repository-name `base` path. `public/CNAME` preserves the custom domain during deployment.
+In the GitHub repository, choose **Settings → Pages → Source: GitHub Actions**, then save `cairnsmp.com` under **Custom domain**. The Pages setting is authoritative; `public/CNAME` documents and packages the intended hostname but does not configure a custom Actions deployment by itself. Astro intentionally has no repository-name `base` path.
 
 DNS remains managed at Porkbun. Do not change the `play.cairnsmp.com` Minecraft record while configuring the website. Use GitHub’s current custom-domain documentation when adding the apex and `www` records instead of copying potentially stale IP addresses into this repository.
 
