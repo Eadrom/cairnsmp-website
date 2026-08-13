@@ -22,11 +22,14 @@ export default defineConfig({
         Footer: './src/components/StarlightFooter.astro',
       },
       head: [
-        { tag: 'meta', attrs: { property: 'og:image', content: 'https://cairnsmp.com/og-default.png' } },
+        { tag: 'meta', attrs: { property: 'og:image', content: 'https://cairnsmp.com/og-cairnsmp-logo.png' } },
+        { tag: 'meta', attrs: { property: 'og:image:alt', content: 'Cairn SMP logo' } },
         { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
         { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
         { tag: 'meta', attrs: { property: 'og:type', content: 'website' } },
         { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
+        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://cairnsmp.com/og-cairnsmp-logo.png' } },
+        { tag: 'meta', attrs: { name: 'twitter:image:alt', content: 'Cairn SMP logo' } },
         { tag: 'meta', attrs: { name: 'theme-color', content: '#18231d' } },
       ],
       markdown: {
