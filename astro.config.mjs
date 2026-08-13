@@ -29,6 +29,9 @@ export default defineConfig({
         { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
         { tag: 'meta', attrs: { name: 'theme-color', content: '#18231d' } },
       ],
+      markdown: {
+        processedDirs: ['./src/content/changelog/'],
+      },
       sidebar: [
         { label: 'Start here', items: ['play', 'rules', 'faq', 'about'] },
         {

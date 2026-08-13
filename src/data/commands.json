@@ -1,12 +1,121 @@
 [
   {
-    "id": "template",
-    "command": "/replace-me",
-    "description": "Replace this unpublished template with a verified command.",
-    "category": "Template",
-    "aliases": [],
-    "example": "/replace-me",
-    "notes": "Set published to true only after every value is verified for Cairn SMP.",
-    "published": false
+    "id": "balance",
+    "command": "/balance",
+    "description": "Check your current in-game currency balance.",
+    "category": "Economy",
+    "published": true
+  },
+  {
+    "id": "pay",
+    "command": "/pay <player> <amount>",
+    "description": "Pay another player from your in-game balance.",
+    "category": "Economy",
+    "example": "/pay Eadrom 100",
+    "published": true
+  },
+  {
+    "id": "buy-claim-blocks",
+    "command": "/buyclaimblocks <amount>",
+    "description": "Buy claim blocks for $1 of in-game currency per block.",
+    "category": "Claims",
+    "example": "/buyclaimblocks 100",
+    "published": true
+  },
+  {
+    "id": "claim-kit",
+    "command": "/kit claim",
+    "description": "Get the golden shovel used to create and edit claims.",
+    "category": "Claims",
+    "notes": "This kit has a 10-minute cooldown.",
+    "published": true
+  },
+  {
+    "id": "jobs-browse",
+    "command": "/jobs browse",
+    "description": "Browse the available jobs. You can hold up to three jobs at once.",
+    "category": "Jobs",
+    "published": true
+  },
+  {
+    "id": "shop-find-item",
+    "command": "/qs finditem TO_BUY <item>",
+    "description": "Find nearby chest shops where you can buy an item.",
+    "category": "Shops",
+    "example": "/qs finditem TO_BUY diamond",
+    "published": true
+  },
+  {
+    "id": "spawn",
+    "command": "/spawn",
+    "description": "Return to the server spawn.",
+    "category": "Travel and Homes",
+    "published": true
+  },
+  {
+    "id": "home",
+    "command": "/home",
+    "description": "Teleport to your bed or custom home.",
+    "category": "Travel and Homes",
+    "published": true
+  },
+  {
+    "id": "set-home",
+    "command": "/sethome",
+    "description": "Set your custom home at your current location.",
+    "category": "Travel and Homes",
+    "published": true
+  },
+  {
+    "id": "teleport-ask",
+    "command": "/tpask <player>",
+    "description": "Ask to teleport to another player.",
+    "category": "Travel and Homes",
+    "published": true
+  },
+  {
+    "id": "teleport-here",
+    "command": "/tphere <player>",
+    "description": "Ask another player to teleport to you.",
+    "category": "Travel and Homes",
+    "published": true
+  },
+  {
+    "id": "teleport-accept",
+    "command": "/tpaccept",
+    "description": "Accept a pending teleport request.",
+    "category": "Travel and Homes",
+    "published": true
+  },
+  {
+    "id": "random-teleport",
+    "command": "/tpr",
+    "description": "Teleport to a random location in your current dimension.",
+    "category": "Travel and Homes",
+    "aliases": ["/tprandom"],
+    "notes": "The destination is 500–4,000 blocks from the dimension's configured center.",
+    "published": true
+  },
+  {
+    "id": "skills",
+    "command": "/skills",
+    "description": "Open the AuraSkills menu to view skills and progression.",
+    "category": "Skills and Enchants",
+    "published": true
+  },
+  {
+    "id": "custom-enchants",
+    "command": "/ce list",
+    "description": "Open the list of custom enchants available on Cairn SMP.",
+    "category": "Skills and Enchants",
+    "published": true
+  },
+  {
+    "id": "show-item",
+    "command": "/showitem",
+    "description": "Share the item in your active hand as a hoverable link in chat.",
+    "category": "Chat and Items",
+    "notes": "To show your shield, select an empty hotbar slot first.",
+    "published": true
   }
 ]
