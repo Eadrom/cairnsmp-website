@@ -1,9 +1,13 @@
 ---
 import Default from '@astrojs/starlight/components/Footer.astro';
+import { site } from '../data/site';
 ---
 
 <Default><slot /></Default>
 <div class="handbook-footer">
   <span>Cairn SMP · Java Edition</span>
-  <a href="mailto:support@cairnsmp.com">support@cairnsmp.com</a>
+  <div class="handbook-footer-links">
+    <a href={site.discordUrl}>Discord <span aria-hidden="true">↗</span></a>
+    <a href={`mailto:${site.supportEmail}`}>Contact us</a>
+  </div>
 </div>

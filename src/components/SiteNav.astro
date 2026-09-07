@@ -1,14 +1,15 @@
 ---
+import { site } from '../data/site';
+
 const { compact = false } = Astro.props;
 const currentPath = Astro.url.pathname;
 
 const links = [
-  { label: 'Play', href: '/play/' },
-  { label: 'Features', href: '/features/' },
-  { label: 'Rules', href: '/rules/' },
+  { label: 'Handbook', href: '/features/' },
   { label: 'Commands', href: '/commands/' },
   { label: 'Changelog', href: '/changelog/' },
-  { label: 'Discord', href: 'https://discord.gg/6p8UXyXMzr' },
+  { label: 'Discord', href: site.discordUrl },
+  { label: 'How to play', href: '/play/' },
 ];
 ---
 
@@ -16,6 +17,6 @@ const links = [
   {links.map(({ label, href }) => {
     const isInternal = href.startsWith('/');
     const isActive = isInternal && (currentPath === href || currentPath.startsWith(href));
-    return <a class:list={{ active: isActive }} href={href} aria-current={isActive ? 'page' : undefined}>{label}</a>;
+    return <a class:list={{ active: isActive, 'nav-play': href === '/play/' }} href={href} aria-current={isActive ? 'page' : undefined}>{label}</a>;
   })}
 </nav>

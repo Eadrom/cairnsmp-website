@@ -6,8 +6,9 @@ sidebar:
 ---
 
 import CopyAddress from '../../components/CopyAddress.astro';
+import { site } from '../../data/site';
 
-Cairn SMP is a **Minecraft Java Edition** server. Bedrock Edition is not supported in V1.
+Cairn SMP is a **Minecraft Java Edition** server. Bedrock Edition is not supported.
 
 <CopyAddress compact />
 
@@ -16,8 +17,7 @@ Cairn SMP is a **Minecraft Java Edition** server. Bedrock Edition is not support
 | Item | Details |
 | --- | --- |
 | Edition | Minecraft: Java Edition |
-| Server address | `play.cairnsmp.com` |
-| Supported version | Minecraft Java Edition 26.2 |
+| Supported version | Minecraft Java Edition {site.minecraftVersion} |
 | Required client mods | None documented yet |
 | Resource pack | No requirement documented yet |
 
@@ -27,7 +27,7 @@ Cairn SMP is a **Minecraft Java Edition** server. Bedrock Edition is not support
 2. Choose **Multiplayer** from the main menu.
 3. Select **Add Server**.
 4. Give it a name such as “Cairn SMP”.
-5. Enter `play.cairnsmp.com` as the server address.
+5. Paste the server address from the copy button above.
 6. Save the entry, select it, and choose **Join Server**.
 
 ## Take a moment before joining
@@ -36,4 +36,4 @@ Read the [server rules](/rules/) before you set out. The [features handbook](/fe
 
 ## Need help?
 
-Join the [Cairn SMP Discord](https://discord.gg/6p8UXyXMzr) or contact [support@cairnsmp.com](mailto:support@cairnsmp.com).
+Join the <a href={site.discordUrl}>Cairn SMP Discord</a> or contact <a href={`mailto:${site.supportEmail}`}>{site.supportEmail}</a>.

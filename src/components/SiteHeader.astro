@@ -1,8 +1,5 @@
 ---
 import SiteNav from './SiteNav.astro';
-import CopyAddress from './CopyAddress.astro';
-
-const showAddress = Astro.url.pathname === '/';
 ---
 
 <header class="site-header">
@@ -11,7 +8,6 @@ const showAddress = Astro.url.pathname === '/';
       <img src="/branding/cairnsmp-icon.png" width="40" height="40" alt="" />
       <span>Cairn SMP</span>
     </a>
-    {showAddress && <div class="header-address"><CopyAddress /></div>}
   </div>
   <div class="desktop-nav"><SiteNav /></div>
   <details class="mobile-menu">

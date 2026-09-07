@@ -1,20 +1,30 @@
+---
+import { site } from '../data/site';
+---
+
 <footer class="site-footer">
   <div class="footer-identity">
-    <img src="/branding/cairnsmp-icon.png" width="72" height="72" alt="" />
+    <img src="/branding/cairnsmp-icon.png" width="56" height="56" alt="" loading="lazy" />
     <div>
       <a class="footer-brand" href="/">Cairn SMP</a>
-      <p>A small Java Edition survival community.</p>
-      <a class="footer-address" href="/play/"><code>play.cairnsmp.com</code></a>
+      <p>A small community.<br />A world to make your own.</p>
+      <span class="footer-edition">Minecraft · Java Edition</span>
     </div>
   </div>
-  <div class="footer-links">
-    <a href="/play/">How to play</a>
-    <a href="/features/">Features</a>
-    <a href="/rules/">Rules</a>
-    <a href="/commands/">Commands</a>
-    <a href="/changelog/">Changelog</a>
-    <a href="https://discord.gg/6p8UXyXMzr">Discord</a>
-    <a href="/about/">About</a>
-    <a href="mailto:support@cairnsmp.com">support@cairnsmp.com</a>
-  </div>
+  <nav class="footer-links" aria-label="Footer navigation">
+    <div>
+      <p class="footer-heading">Field guide</p>
+      <a href="/play/">How to play</a>
+      <a href="/features/">Features</a>
+      <a href="/commands/">Commands</a>
+      <a href="/changelog/">Changelog</a>
+    </div>
+    <div>
+      <p class="footer-heading">Community</p>
+      <a href="/about/">About Cairn</a>
+      <a href="/rules/">Server rules</a>
+      <a href={site.discordUrl}>Discord <span aria-hidden="true">↗</span></a>
+      <a href={`mailto:${site.supportEmail}`}>Contact us</a>
+    </div>
+  </nav>
 </footer>

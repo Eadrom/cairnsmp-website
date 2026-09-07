@@ -30,6 +30,7 @@ The production output is written to `dist/`.
 - `src/content/docs/features/` — one Markdown file per server feature
 - `src/content/changelog/` — structured Markdown release notes
 - `src/data/commands.json` — structured command reference
+- `src/data/site.ts` — shared address, version, Discord invite, and support email for site components (handbook prose is maintained separately)
 - `src/content.config.ts` — build-time content validation
 - `src/styles/` — landing page and Starlight themes
 - `src/assets/branding/` — source branding processed by Astro

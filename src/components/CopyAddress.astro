@@ -1,15 +1,17 @@
 ---
+import { site } from '../data/site';
+
 interface Props {
   compact?: boolean;
 }
 
 const { compact = false } = Astro.props;
-const address = 'play.cairnsmp.com';
+const address = site.address;
 ---
 
-<div class:list={['copy-address', { compact }]} data-copy-address>
+<div class:list={['copy-address', { compact }]} data-copy-address={address}>
   <div class="address-text">
-    <span class="address-label">Java server</span>
+    <span class="address-label">Server address</span>
     <code>{address}</code>
   </div>
   <button type="button" data-copy-button aria-label={`Copy ${address} to clipboard`}>
@@ -22,27 +24,30 @@ const address = 'play.cairnsmp.com';
 </div>
 
 <script>
-  const address = 'play.cairnsmp.com';
-
   document.querySelectorAll<HTMLElement>('[data-copy-address]').forEach((control) => {
+    const address = control.dataset.copyAddress;
     const button = control.querySelector<HTMLButtonElement>('[data-copy-button]');
     const label = control.querySelector<HTMLElement>('[data-copy-label]');
     const status = control.querySelector<HTMLElement>('[data-copy-status]');
-    if (!button || !label || !status || button.dataset.ready) return;
+    if (!address || !button || !label || !status || button.dataset.ready) return;
     button.dataset.ready = 'true';
+    let resetTimer: number | undefined;
 
     button.addEventListener('click', async () => {
+      window.clearTimeout(resetTimer);
       try {
         await navigator.clipboard.writeText(address);
         control.classList.add('copied');
         label.textContent = 'Copied!';
         status.textContent = `${address} copied to clipboard.`;
-        window.setTimeout(() => {
+        resetTimer = window.setTimeout(() => {
           control.classList.remove('copied');
           label.textContent = 'Copy address';
+          status.textContent = '';
         }, 2400);
       } catch {
-        label.textContent = 'Select address above';
+        control.classList.remove('copied');
+        label.textContent = 'Copy manually';
         status.textContent = `Copy did not work. Select ${address} and copy it manually.`;
       }
     });
