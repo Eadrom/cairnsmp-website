@@ -5,7 +5,7 @@ sidebar:
   order: 4
 ---
 
-Cairn SMP began primarily as a server for Eadrom’s friends, guildmates, and friends-of-friends. There is room for gradual outside growth, but the goal is a real small community—not a giant commercial network.
+Cairn SMP started out as a server for Eadrom’s friends, guildmates and friends-of-friends. The goal now is to grow into a community of regular players, while Eadrom keeps developing new features to explore.
 
 ## The idea
 
@@ -19,7 +19,7 @@ A cairn is a marker built one stone at a time. It helps people find a route with
 - Server systems documented with verified information
 - No store funnel, voting campaign, or player-count marketing
 
-## Community {#community}
+## Community
 
 Join the community using the permanent [Cairn SMP Discord invite](https://discord.gg/6p8UXyXMzr).
 
