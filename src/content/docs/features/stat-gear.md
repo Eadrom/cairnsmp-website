@@ -37,7 +37,7 @@ See [Levelled Mobs](/features/levelled-mobs/) for how mob levels work.
 - **Bosses** always drop one level-100 item from a special boss loot table, with a small chance of a second item.
 
 :::tip[Keep a field journal]
-Keeping a journal of what dropped, from which mob, and where is a good habit. It also makes your finds easy to share with other players.
+Keep a book and quill with notes on what dropped, from which mob, and where. It’s worth comparing notes with other players too.
 :::
 
 ## Your first Stat Gear
