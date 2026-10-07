@@ -3,28 +3,15 @@ title: Roadmap
 description: What’s coming to Cairn SMP. Plans, not promises.
 ---
 
-Here’s what Eadrom is working on and thinking about. Nothing here has a date, and plans can change as the server grows. For what has already shipped, see the [changelog](/changelog/).
+Here’s what Eadrom is working on next, roughly in the order he expects to get to it. Nothing here has a date, and the order and details can change. For what has already shipped, see the [changelog](/changelog/).
 
-## Up next
-
-- **Legendary gear.** A rarer tier of [Stat Gear](/features/stat-gear/) above anything that drops today.
-- **A balance pass** based on how Stat Gear and the new mob scaling from [v1.4](/changelog/1-4/) play out.
-- **Better item sharing in chat**, so the gear you link can be inspected in more detail.
-
-## Planned
-
-- **Resource worlds** in all three dimensions, reset from time to time, for mining and gathering without scarring the main world.
-- **Gear upgrades beyond Pristine**, to take your best Stat Gear further through crafting.
-- **Job quests and job shops** with rewards for leveling your jobs.
-- **A world map** you can browse.
-- **A shared market at spawn** with stalls for player shops.
-- **Support for more Minecraft versions**, so a client that’s a little newer or older than the server can still join.
-
-## Ideas being explored
-
-- **Server projects** such as road networks and a museum of blocks, mobs and items.
-- **Community events**, like a horse race where everyone has a week to breed their fastest horse.
-- **Outdoor raid experiences.**
-- **A seasonal hardcore world**, with rewards that carry over to your main character.
+1. **More Minecraft versions.** The server moves behind a proxy so Java clients a little newer or older than the server’s version can still join. Bedrock Edition support isn’t planned.
+2. **Craftable gear upgrades.** Take your best [Stat Gear](/features/stat-gear/) beyond Pristine by crafting it into stronger tiers.
+3. **Resource worlds and world borders.** Resource worlds in all three dimensions refresh on a regular schedule. They’re the place for gathering resources in bulk, which keeps the main worlds looking good. The main worlds get borders.
+4. **Legendary gear.** A further upgrade tier, up to legendary.
+5. **Job shops** that sell materials for the gear upgrade system.
+6. **A shared market** with stalls you can rent for your shop.
+7. **A PvP arena.**
+8. **Hardcore seasons.** A seasonal hardcore version of Cairn running for one to three months, with rewards for your main Cairn character based on what you accomplish during the season.
 
 Have an idea, or a favorite on this list? Share it in the [Cairn SMP Discord](https://discord.gg/6p8UXyXMzr).
