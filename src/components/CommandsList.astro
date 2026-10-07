@@ -9,8 +9,8 @@ const categories = Map.groupBy(commands, (entry) => entry.data.category);
 
 {commands.length === 0 ? (
   <div class="content-empty-state">
-    <p><strong>Command reference coming soon.</strong></p>
-    <p>The verified server command list has not been supplied yet. No placeholder commands are shown.</p>
+    <p><strong>No commands listed right now.</strong></p>
+    <p>Ask in Discord if you need help with a command.</p>
   </div>
 ) : (
   <div class="command-groups">
