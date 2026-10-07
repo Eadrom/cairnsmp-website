@@ -36,8 +36,8 @@ See [Levelled Mobs](/features/levelled-mobs/) for how mob levels work.
 - **Armor is biome-themed.** Where you take a mob down decides the affix its armor carries. Rare biomes offer stronger affixes.
 - **Bosses** always drop one level-100 item from a special boss loot table, with a small chance of a second item.
 
-:::tip[Keep a field journal]
-Keep a book and quill with notes on what dropped, from which mob, and where. It’s worth comparing notes with other players too.
+:::tip[Field journal]
+A book and quill makes a handy field journal for jotting down what dropped, from which mob, and where. Compare notes with other players and you might spot something you missed.
 :::
 
 ## Your first Stat Gear
