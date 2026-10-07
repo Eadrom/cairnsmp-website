@@ -7,7 +7,7 @@ sidebar:
 
 ## What edition of Minecraft does Cairn SMP use?
 
-Cairn SMP is for **Minecraft: Java Edition** only in V1. Bedrock Edition is not supported.
+Cairn SMP is for **Minecraft: Java Edition** only. Bedrock Edition is not supported.
 
 ## What is the server address?
 
@@ -19,7 +19,7 @@ Cairn SMP currently supports **Minecraft Java Edition 26.2**.
 
 ## Is there a live server status or player count?
 
-No. The V1 website intentionally does not publish live status or player counts.
+No, the website doesn’t show live server status or player counts.
 
 ## Is there a Discord?
 

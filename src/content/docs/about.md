@@ -16,7 +16,6 @@ A cairn is a marker built one stone at a time. It helps people find a route with
 - Minecraft: Java Edition survival
 - A small, growing community
 - A practical player handbook
-- Server systems documented with verified information
 - No gambling and no pay-to-win
 
 ## Community
