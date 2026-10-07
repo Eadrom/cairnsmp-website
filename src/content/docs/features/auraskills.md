@@ -1,24 +1,48 @@
 ---
 title: AuraSkills
-description: Player guide for AuraSkills on Cairn SMP.
+description: Skills, stats and abilities on Cairn SMP, and how they tie into your gear.
 sidebar:
   order: 2
 ---
 
-This page will document how AuraSkills is configured and used on Cairn SMP.
+AuraSkills levels you up as you play. Mining raises Mining, fighting raises Fighting, and so on. Skills unlock abilities as they grow, most also unlock a mana ability, and skill levels raise your stats.
 
-:::note[Details to migrate]
-Enabled skills, rewards, progression values, menus, and commands have not been supplied yet.
-:::
+Open the AuraSkills menu with `/skills` to see your skills, stats and abilities.
 
 ## Skills
 
-**TODO:** Add the verified list of enabled skills.
+Eleven skills are enabled, each up to level 100:
 
-## Progression
+| Gathering | Combat | Utility |
+| --- | --- | --- |
+| Farming | Fighting | Agility |
+| Foraging | Archery | Alchemy |
+| Mining | Defense | Enchanting |
+| Fishing | | |
+| Excavation | | |
 
-**TODO:** Explain Cairn SMP’s actual progression settings and rewards.
+Settings are tuned to reduce grind and make abilities more impactful than stock.
 
-## Player reference
+## Stats
 
-**TODO:** Add verified menus and commands.
+Skills feed stats such as Strength, Toughness, Luck and Wisdom. A few that matter on Cairn:
+
+- **Strength** adds damage, and **Toughness** reduces the damage you take. Both were rebalanced in [v1.4](/changelog/1-4/).
+- **Wisdom** gives an anvil cost discount, among other things.
+- **Luck** improves your odds in gathering skills.
+
+[Stat Gear](/features/stat-gear/) adds stats and traits on top of what your skills give you.
+
+## Death
+
+When you die you lose **50% of your progress toward your next level**. You never lose a level you’ve already reached.
+
+## Anvil Master
+
+Anvil Master, from the Enchanting skill, unlocks at Enchanting level 3. It raises the anvil’s “Too Expensive” cap by two levels per Enchanting level: 46 at level 3, 56 at level 8. Together with Wisdom’s discount, it keeps heavily enchanted gear workable.
+
+## Related
+
+- [Custom Enchants](/features/custom-enchants/)
+- [v1.2 release notes](/changelog/1-2/): Anvil Master.
+- [v1.4 release notes](/changelog/1-4/): AuraSkills balance pass.
