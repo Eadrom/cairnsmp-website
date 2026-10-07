@@ -18,13 +18,11 @@ Custom enchants come from the same places as vanilla ones:
 
 Curses turn up on mob and treasure loot, never on villager trades.
 
-Some enchantments open doors the vanilla game keeps shut. Spawners can be mined with the right enchant, and the right weapon enchant can make naturally spawned mobs rarely drop their spawn eggs. Finding out which enchant does what is part of the game.
+Some enchants go beyond vanilla: one lets you mine spawners, and a weapon enchant can make naturally spawned mobs rarely drop their spawn eggs.
 
 ## Exclusive groups
 
 Many enchants come in exclusive sets: gear can carry only one from each set. For example, a weapon can have one of Temper, Rage or Double Strike, and arrows can be Poisoned or Electrified, not both. `/ce list` shows the exclusions.
-
-Fewer enchants per item means each one matters more.
 
 ## Anvils
 

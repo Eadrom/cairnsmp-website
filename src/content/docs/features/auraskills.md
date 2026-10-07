@@ -21,8 +21,6 @@ Eleven skills are enabled, each up to level 100:
 | Fishing | | |
 | Excavation | | |
 
-Settings are tuned to reduce grind and make abilities more impactful than stock.
-
 ## Stats
 
 Skills feed stats such as Strength, Toughness, Luck and Wisdom. A few that matter on Cairn:

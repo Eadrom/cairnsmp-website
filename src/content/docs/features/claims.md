@@ -44,7 +44,7 @@ Stand in your claim and use:
 
 - **Pistons** work anywhere, as long as the piston and the blocks it moves don’t cross into someone else’s claim.
 - **Fire** spreads more aggressively than vanilla in the wild, but it can’t spread or burn blocks inside claims.
-- Stuck in someone else’s claim? `/trapped` moves you to nearby unclaimed land after a short wait.
+- Stuck in someone else’s claim? `/trapped` moves you to nearby unclaimed land.
 - **Log in at least once a year** to keep your claims active.
 
 ## Related
