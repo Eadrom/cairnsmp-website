@@ -17,7 +17,7 @@ A cairn is a marker built one stone at a time. It helps people find a route with
 - A small, growing community
 - A practical player handbook
 - Server systems documented with verified information
-- No store funnel, voting campaign, or player-count marketing
+- No gambling and no pay-to-win
 
 ## Community
 
