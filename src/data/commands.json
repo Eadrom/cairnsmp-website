@@ -31,6 +31,49 @@
     "published": true
   },
   {
+    "id": "trust",
+    "command": "/trust <player>",
+    "description": "Let a player build and break in the claim you're standing in.",
+    "category": "Claims",
+    "notes": "Weaker levels: /accesstrust (beds, buttons, levers) and /containertrust (also containers, crops, animals).",
+    "published": true
+  },
+  {
+    "id": "untrust",
+    "command": "/untrust <player>",
+    "description": "Remove a player's access to the claim you're standing in.",
+    "category": "Claims",
+    "published": true
+  },
+  {
+    "id": "trust-list",
+    "command": "/trustlist",
+    "description": "List who has access to the claim you're standing in.",
+    "category": "Claims",
+    "published": true
+  },
+  {
+    "id": "claims-list",
+    "command": "/claimslist",
+    "description": "List your claims and remaining claim blocks.",
+    "category": "Claims",
+    "published": true
+  },
+  {
+    "id": "abandon-claim",
+    "command": "/abandonclaim",
+    "description": "Delete the claim you're standing in.",
+    "category": "Claims",
+    "published": true
+  },
+  {
+    "id": "trapped",
+    "command": "/trapped",
+    "description": "Move to nearby unclaimed land when stuck inside someone else's claim.",
+    "category": "Claims",
+    "published": true
+  },
+  {
     "id": "jobs-browse",
     "command": "/jobs browse",
     "description": "Browse the available jobs. You can hold up to three jobs at once.",
