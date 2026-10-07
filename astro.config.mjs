@@ -41,7 +41,7 @@ export default defineConfig({
           label: 'Features',
           items: [{ autogenerate: { directory: 'features' } }],
         },
-        { label: 'Reference', items: ['commands', { label: 'Changelog', link: '/changelog/' }] },
+        { label: 'Reference', items: ['commands', { label: 'Changelog', link: '/changelog/' }, 'roadmap'] },
       ],
       lastUpdated: true,
       credits: false,
