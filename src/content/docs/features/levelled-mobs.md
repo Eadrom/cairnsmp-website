@@ -1,6 +1,6 @@
 ---
 title: Levelled Mobs
-description: How hostile mob levels work on Cairn SMP, from the quiet lands near spawn to level-100 bosses.
+description: How hostile mob levels work on Cairn SMP, up to level-100 bosses.
 sidebar:
   order: 4
 ---
@@ -11,7 +11,6 @@ Hostile mobs on Cairn SMP have levels from 1 to 100. A mob’s level and its nam
 
 - **Distance from spawn.** Mobs get tougher the farther you travel from spawn, in all three dimensions.
 - **Your power.** Levels also rise with your AuraSkills power, so the world keeps pace as you grow.
-- **Near spawn is gentler.** Mobs below level 50 are weaker than standard, making the area around spawn less dangerous for new players.
 
 The server runs on **Hard** difficulty, so even low-level mobs hit harder and food matters more.
 
@@ -23,7 +22,7 @@ Mob name colors use the same quality colors as [Stat Gear](/features/stat-gear/)
 
 Wardens, Withers and Ender Dragons always spawn at **level 100**. Bring friends and come prepared.
 
-Every boss kill drops one level-100 item from a special boss pool, with a small chance of a second.
+Every boss kill drops one level-100 item from a special boss loot table, with a small chance of a second.
 
 ## Rewards
 

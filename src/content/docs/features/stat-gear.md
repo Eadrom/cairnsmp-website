@@ -1,13 +1,20 @@
 ---
 title: Stat Gear
-description: Equipment that carries AuraSkills stats, found on hostile mobs across all three dimensions.
+description: Equipment with AuraSkills stats and traits, dropped by hostile mobs.
 sidebar:
   order: 1
 ---
 
-Stat Gear is armor, weapons and tools that carry AuraSkills stats and traits. It drops rarely from hostile mobs in the Overworld, the Nether and the End.
+Stat Gear is armor, weapons and tools that carry AuraSkills stats and traits. It drops rarely from hostile mobs.
 
-This page explains how to read the gear and where to start looking. Which mob carries what, and which lands lend which powers, is left for you to discover.
+## Stats and traits
+
+Stat Gear grants two kinds of bonus.
+
+- **Stats** are AuraSkills’ base attributes, such as Strength, Luck or Wisdom. Each stat feeds one or more traits a little at a time. For example, each point of Strength adds 0.25% damage.
+- **Traits** are the effects themselves, such as Attack Damage, Damage Reduction or Health. A trait on an item applies directly: `Attack Damage: +1%` is a full 1% more damage, as much as 4 points of Strength.
+
+A trait line is stronger than a stat line on the same item, which is why traits only appear on higher-band gear.
 
 ## Reading an item
 
@@ -26,16 +33,16 @@ See [Levelled Mobs](/features/levelled-mobs/) for how mob levels work.
 ## Where it comes from
 
 - **Weapons and tools are mob-themed.** What a creature fights or works with is a good hint of what it might leave behind.
-- **Armor is biome-themed.** Where you take a mob down decides the affix its armor carries. Rare biomes offer stronger affixes, so the hard-to-reach corners of the world are worth the trip.
-- **Bosses** always drop one level-100 item from a special boss pool, with a small chance of a second item.
+- **Armor is biome-themed.** Where you take a mob down decides the affix its armor carries. Rare biomes offer stronger affixes.
+- **Bosses** always drop one level-100 item from a special boss loot table, with a small chance of a second item.
 
 :::tip[Keep a field journal]
-Drop rates are low on purpose. Note what dropped, from which mob, and where. Patterns take a while to surface, and comparing notes with other players is half the fun.
+Keeping a journal of what dropped, from which mob, and where is a good habit. It also makes your finds easy to share with other players.
 :::
 
 ## Your first Stat Gear
 
-New players start with the **Adventurer’s** kit: temporary chainmail armor with a modest health and damage-reduction boost, worth roughly 40–50% more effective health. It has Soulbound, so you keep it when you die. It can’t be repaired or further enchanted, but it lasts long enough to get established.
+New players start with the **Adventurer’s** kit: temporary chainmail armor that gives you extra survivability while you get started. It has Soulbound, so you keep it when you die. It can’t be repaired or further enchanted, so it wears out over time.
 
 ## Related
 
