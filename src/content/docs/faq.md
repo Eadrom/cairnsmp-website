@@ -15,7 +15,7 @@ Use `play.cairnsmp.com`. Follow the full steps on the [How to Play page](/play/)
 
 ## Which Minecraft versions are supported?
 
-Cairn SMP currently supports **Minecraft Java Edition 26.2**.
+Cairn SMP supports **Minecraft Java Edition 1.21 through 26.3**. The server runs 26.2, which gives the smoothest experience. On other versions, a few blocks and items added or changed since your version may look a little different.
 
 ## Is there a live server status or player count?
 
