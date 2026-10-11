@@ -16,7 +16,7 @@ const categories = Map.groupBy(commands, (entry) => entry.data.category);
   <div class="command-groups">
     {[...categories].map(([category, entries]) => (
       <section>
-        <h2>{category}</h2>
+        <h2 id={category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>{category}</h2>
         <div class="command-list">
           {entries.map(({ data }) => (
             <article>

@@ -154,11 +154,53 @@
     "published": true
   },
   {
-    "id": "show-item",
-    "command": "/showitem",
-    "description": "Share the item in your active hand as a hoverable link in chat.",
-    "category": "Chat and Items",
-    "notes": "To show your shield, select an empty hotbar slot first.",
+    "id": "chat-item",
+    "command": "[item]",
+    "description": "Type it anywhere in a chat message to show the item in your hand. Other players can hover over it to see its name, enchantments and stats.",
+    "category": "Interactive Chat",
+    "published": true
+  },
+  {
+    "id": "chat-inventory",
+    "command": "[inv]",
+    "description": "Type it in a chat message to show your inventory. Other players can click it to view it.",
+    "category": "Interactive Chat",
+    "published": true
+  },
+  {
+    "id": "chat-ender",
+    "command": "[ender]",
+    "description": "Type it in a chat message to show your ender chest. Other players can click it to view it.",
+    "category": "Interactive Chat",
+    "published": true
+  },
+  {
+    "id": "chat-money",
+    "command": "[money]",
+    "description": "Type it in a chat message to show your balance.",
+    "category": "Interactive Chat",
+    "published": true
+  },
+  {
+    "id": "chat-position",
+    "command": "[pos]",
+    "description": "Type it in a chat message to show your coordinates.",
+    "category": "Interactive Chat",
+    "published": true
+  },
+  {
+    "id": "chat-mention",
+    "command": "@<player>",
+    "description": "Mention a player in chat to get their attention. They hear a sound and see a note above their hotbar.",
+    "category": "Interactive Chat",
+    "published": true
+  },
+  {
+    "id": "message",
+    "command": "/msg <player> <message>",
+    "description": "Send a private message to a player.",
+    "category": "Interactive Chat",
+    "notes": "Tip: click a player's name in chat to start a message to them.",
     "published": true
   }
 ]
