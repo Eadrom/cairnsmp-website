@@ -27,7 +27,8 @@ Many enchants come in exclusive sets: gear can carry only one from each set. For
 ## Anvils
 
 - Combining heavily enchanted gear is possible: the Enchanting skill raises the “Too Expensive” cap, and the Wisdom stat discounts anvil costs. See [AuraSkills](/features/auraskills/#anvil-master).
-- The anvil shows the real cost of a combination, including those discounts.
+- The cap is checked after the Wisdom discount, so a combination the discount brings under the cap goes through.
+- The anvil shows the real cost of a combination, including those discounts, and tells you your cap in chat when you open it.
 
 ## XP bottles
 
