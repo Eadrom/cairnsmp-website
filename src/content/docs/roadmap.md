@@ -3,7 +3,7 @@ title: Roadmap
 description: What’s coming to Cairn SMP. Plans, not promises.
 ---
 
-Here’s what Eadrom is working on next, roughly in the order he expects to get to it. Nothing here has a date, and the order and details can change. For what has already shipped, see the [changelog](/changelog/).
+Here’s what the admin team is working on next, roughly in the order we expect to get to it. Nothing here has a date, and the order and details can change. For what has already shipped, see the [changelog](/changelog/).
 
 1. **Craftable gear upgrades.** Take your best [Stat Gear](/features/stat-gear/) beyond Pristine diamond by crafting it into stronger tiers of netherite.
 2. **Resource worlds and world borders.** Resource worlds in all three dimensions that refresh on a regular schedule. They’re the place for gathering resources in bulk, which keeps the main worlds looking good. The main worlds get borders.
