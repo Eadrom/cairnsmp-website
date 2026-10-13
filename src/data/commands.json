@@ -135,7 +135,7 @@
     "command": "/tpr",
     "description": "Teleport to a random location in your current dimension.",
     "category": "Travel and Homes",
-    "aliases": ["/tprandom"],
+    "aliases": ["/tprandom", "/rtp"],
     "notes": "The destination is 500–4,000 blocks from the dimension's configured center.",
     "published": true
   },
