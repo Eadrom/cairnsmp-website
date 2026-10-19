@@ -131,36 +131,33 @@
     "published": true
   },
   {
-    "id": "random-teleport",
-    "command": "/tpr",
-    "description": "Teleport to a random location in your current dimension.",
-    "category": "Travel and Homes",
-    "aliases": ["/tprandom", "/rtp"],
-    "notes": "The destination is 500–4,000 blocks from the dimension's configured center.",
-    "published": true
-  },
-  {
     "id": "resource-world",
     "command": "/rw",
-    "description": "Teleport to a random spot in the resource Overworld, the place for heavy mining, chopping, and digging.",
-    "category": "Resource Worlds",
-    "notes": "Resource worlds reset every Sunday at 10:30 UTC, so don't leave anything behind. Jobs pay 25% more and level 25% faster there. No claims or homes; get back with /spawn, /home, or /back.",
+    "description": "Teleport to the resource Overworld.",
+    "category": "Travel and Homes",
     "published": true
   },
   {
     "id": "resource-world-nether",
     "command": "/rw nether",
-    "description": "Teleport to a random spot in the resource Nether.",
-    "category": "Resource Worlds",
-    "notes": "Once you're there, /tpr hops you around the resource world.",
+    "description": "Teleport to the resource Nether.",
+    "category": "Travel and Homes",
     "published": true
   },
   {
     "id": "resource-world-end",
     "command": "/rw end",
-    "description": "Teleport to the main island of the resource End.",
-    "category": "Resource Worlds",
-    "notes": "The dragon only comes back if someone respawns it with end crystals.",
+    "description": "Teleport to the resource End.",
+    "category": "Travel and Homes",
+    "published": true
+  },
+  {
+    "id": "random-teleport",
+    "command": "/tpr",
+    "description": "Teleport to a random location in your current dimension.",
+    "category": "Travel and Homes",
+    "aliases": ["/tprandom", "/rtp"],
+    "notes": "The destination is 500–4,000 blocks from the dimension's configured center. Works in the resource worlds too.",
     "published": true
   },
   {

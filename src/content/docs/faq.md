@@ -25,7 +25,7 @@ No, the website doesn’t show live server status or player counts.
 
 Yes. Join using the permanent [Cairn SMP Discord invite](https://discord.gg/6p8UXyXMzr).
 
-In-game chat and the `#server-chat` channel are linked both ways. Use `/discord link` in game to link your accounts and chat from Discord.
+Run `/discord link` in game to link your account and chat in `#server-chat` from Discord.
 
 ## How do I get help?
 
