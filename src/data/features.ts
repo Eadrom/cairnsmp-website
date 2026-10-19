@@ -6,27 +6,33 @@ export const features = [
     marker: 'I',
   },
   {
+    title: 'StatGear Crafting',
+    description: 'Upgrade your best Stat Gear beyond Pristine into Netherforged gear.',
+    href: '/features/statgear-crafting/',
+    marker: 'II',
+  },
+  {
     title: 'AuraSkills',
     description: 'Develop your skills and explore the stats, traits, and abilities behind your character.',
     href: '/features/auraskills/',
-    marker: 'II',
+    marker: 'III',
   },
   {
     title: 'Custom Enchants',
     description: 'Discover new abilities for your equipment, with enchantment choices that matter.',
     href: '/features/custom-enchants/',
-    marker: 'III',
+    marker: 'IV',
   },
   {
     title: 'Levelled Mobs',
     description: 'Face mobs that scale with your AuraSkills power and distance from spawn.',
     href: '/features/levelled-mobs/',
-    marker: 'IV',
+    marker: 'V',
   },
   {
     title: 'Claims',
     description: 'Put down roots. Use a golden shovel to claim land and protect what you build.',
     href: '/features/claims/',
-    marker: 'V',
+    marker: 'VI',
   },
 ] as const;
