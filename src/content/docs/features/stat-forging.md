@@ -30,4 +30,4 @@ Netherforged gear gets a stronger primary stat and primary trait.
 
 ## The Netherforge Codex
 
-Rumor has it an ancient Forgemaster left scraps of their secrets in chests around the world. Gather them all to restore the Netherforge Codex, which holds every recipe. Scraps can be copied, so share what you find with your friends.
+Rumor has it an ancient Forgemaster left scraps of their secrets in chests around the world. Gather them all to restore the Netherforge Codex, which holds every Stat Forging recipe. Scraps can be copied, so share what you find with your friends.
