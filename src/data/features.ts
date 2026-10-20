@@ -6,9 +6,9 @@ export const features = [
     marker: 'I',
   },
   {
-    title: 'StatGear Crafting',
-    description: 'Upgrade your best Stat Gear beyond Pristine into Netherforged gear.',
-    href: '/features/statgear-crafting/',
+    title: 'Stat Forging',
+    description: 'Forge your best Stat Gear beyond Pristine into Netherforged gear.',
+    href: '/features/stat-forging/',
     marker: 'II',
   },
   {
