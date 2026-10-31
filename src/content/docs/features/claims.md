@@ -40,10 +40,44 @@ Stand in your claim and use:
 
 `/trustlist` shows who has access to the claim you’re standing in.
 
+## Claim flags
+
+Flags change how your claim behaves. Stand in a claim you own and use `/setclaimflag <flag>` to turn one on, `/unsetclaimflag <flag>` to turn it off, and `/listclaimflags` to see what's set.
+
+| Flag | What it does | Example |
+| --- | --- | --- |
+| `NoEnterPlayer` | Keeps the players you name out of your claim | `/setclaimflag NoEnterPlayer Steve Alex` |
+| `NoEnderPearl` | No ender pearling into your claim | `/setclaimflag NoEnderPearl` |
+| `NoChorusFruit` | No chorus fruit teleporting into your claim | `/setclaimflag NoChorusFruit` |
+| `EnterMessage` | A chat message visitors see when they walk in | `/setclaimflag EnterMessage Welcome to the library!` |
+| `ExitMessage` | A chat message visitors see when they leave | `/setclaimflag ExitMessage Safe travels!` |
+| `RaidMemberOnly` | Only your claim's members can start a raid there | `/setclaimflag RaidMemberOnly` |
+| `AllowBlockExplosions` | Lets explosions break blocks in your claim, for farms that need it | `/setclaimflag AllowBlockExplosions` |
+
+### Explosions
+
+Claims are protected from explosions. If a farm needs them, use `/setclaimflag AllowBlockExplosions`. It stays on through server restarts. The older `/claimexplosions` toggle also works, but it switches back off at every restart.
+
+### Fire
+
+Claims are protected from fire: it can't spread or burn blocks inside them. Want fire in your claim? Stand in it and run:
+
+`/unsetclaimflag NoFireDamage`
+
+Run the same command again to turn the protection back on. It's a toggle, so check where you stand with `/listclaimflags`:
+
+| `/listclaimflags` shows | Fire in your claim | To allow fire |
+| --- | --- | --- |
+| `nofiredamage` in green under all claims only | Blocked (the default) | Run `/unsetclaimflag NoFireDamage` once |
+| `nofiredamage` in green under this claim **and** all claims | Blocked | Run it **twice**: the first removes your claim's own flag, the second turns fire on |
+| `nofiredamage` in red under this claim | Allowed | Already on. Run it once to protect the claim again |
+
+Don't use `/setclaimflag NoFireDamage`. Your claim is already protected, and setting it only means you'll need an extra `/unsetclaimflag` later.
+
 ## Good to know
 
 - **Pistons** work anywhere, as long as the piston and the blocks it moves don’t cross into someone else’s claim.
-- **Fire** spreads more aggressively than vanilla in the wild, but it can’t spread or burn blocks inside claims.
+- **Fire** spreads more aggressively than vanilla in the wild. Inside claims it can't spread or burn blocks unless the owner turns it on (see [Fire](#fire)).
 - Stuck in someone else’s claim? `/trapped` moves you to nearby unclaimed land.
 - **Log in at least once a year** to keep your claims active.
 
@@ -51,3 +85,4 @@ Stand in your claim and use:
 
 - [Commands](/commands/)
 - [v1.1 release notes](/changelog/1-1/): claim depth, size and piston changes.
+- [v1.6.1 release notes](/changelog/1-6-1/): claim flags.
