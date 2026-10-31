@@ -62,17 +62,13 @@ Flags change how your claim behaves. Stand in a claim you own and use `/setclaim
 - **RaidMemberOnly:** a raid only starts in your claim if the player carrying Bad Omen has at least `/accesstrust` there, so a stranger can't set one off in your village.
 - **AllowBlockExplosions:** creepers, TNT and other explosions can break blocks in your claim. `/unsetclaimflag AllowBlockExplosions` protects it again.
 
-### Explosions
-
-Claims are protected from explosions. If a farm needs them, use `/setclaimflag AllowBlockExplosions`. It stays on through server restarts. The older `/claimexplosions` toggle also works, but it switches back off at every restart.
-
 ### Fire
 
 Claims are protected from fire: it can't spread or burn blocks inside them. Want fire in your claim? Stand in it and run:
 
 `/unsetclaimflag NoFireDamage`
 
-Run the same command again to turn the protection back on. It's a toggle, so check where you stand with `/listclaimflags`:
+Yes, *unset* is right, even though you're turning fire on. Fire protection is a flag that's already set on every claim, so allowing fire means unsetting it for yours. Run the same command again to turn the protection back on. It's a toggle, so check where you stand with `/listclaimflags`:
 
 | `/listclaimflags` shows | Fire in your claim | To allow fire |
 | --- | --- | --- |
