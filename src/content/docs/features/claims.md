@@ -54,6 +54,14 @@ Flags change how your claim behaves. Stand in a claim you own and use `/setclaim
 | `RaidMemberOnly` | Only your claim's members can start a raid there | `/setclaimflag RaidMemberOnly` |
 | `AllowBlockExplosions` | Lets explosions break blocks in your claim, for farms that need it | `/setclaimflag AllowBlockExplosions` |
 
+### More about each flag
+
+- **NoEnterPlayer:** list as many players as you like, separated by spaces. Anyone named is pushed back out at the edge of your claim. It never affects you. `/unsetclaimflag NoEnterPlayer` clears the list.
+- **NoEnderPearl and NoChorusFruit:** stop ender pearls and chorus fruit from landing anyone in your claim, and that includes you and your trusted players. If you have a pearl stasis chamber inside the claim, it won't work while NoEnderPearl is on.
+- **EnterMessage and ExitMessage:** shown in chat to anyone crossing the edge of your claim. Keep them friendly; they're public.
+- **RaidMemberOnly:** a raid only starts in your claim if the player carrying Bad Omen has at least `/accesstrust` there, so a stranger can't set one off in your village.
+- **AllowBlockExplosions:** creepers, TNT and other explosions can break blocks in your claim. `/unsetclaimflag AllowBlockExplosions` protects it again.
+
 ### Explosions
 
 Claims are protected from explosions. If a farm needs them, use `/setclaimflag AllowBlockExplosions`. It stays on through server restarts. The older `/claimexplosions` toggle also works, but it switches back off at every restart.
